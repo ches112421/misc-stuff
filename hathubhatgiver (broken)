@@ -1,0 +1,758 @@
+-- THIS IS BROKEN
+-- just keeping it up for gui ig
+
+if game:GetService("CoreGui"):FindFirstChild("HatHubGivers") then
+	game:GetService("CoreGui"):FindFirstChild("HatHubGivers"):Destroy()
+	print("Hat Hub Giver was already open, destroyed other UI")
+end
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HatHubGivers = Instance.new("ScreenGui")
+local Holder = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local BottomBar = Instance.new("Frame")
+local RigsButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local HatsButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local RigsFrame = Instance.new("Frame")
+local GrButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ReButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local Icon = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local HatsFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local CreeperButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local HandButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local HaloGunnerButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local SoldierButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local IceFairyButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local FireGremlinButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local HammerButton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local MinigunButton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local JevilButton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local ZenButton = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local BirthButton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local RigsFrame_2 = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local BigRigButton = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local NormalRigButton = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local SmallRigButton = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local RippleCircle = Instance.new("ImageLabel")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+
+--Properties:
+
+HatHubGivers.Name = "HatHubGivers"
+HatHubGivers.Parent = game.CoreGui
+
+Holder.Name = "Holder"
+Holder.Parent = HatHubGivers
+Holder.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Holder.BackgroundTransparency = 1.000
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.435084999, 0, 0.520245433, 0)
+Holder.Size = UDim2.new(0, 350, 0, 250)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Holder
+MainFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Size = UDim2.new(0, 350, 0, 250)
+
+BottomBar.Name = "BottomBar"
+BottomBar.Parent = MainFrame
+BottomBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BottomBar.BackgroundTransparency = 1.000
+BottomBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BottomBar.BorderSizePixel = 0
+BottomBar.Position = UDim2.new(0, 0, 0.860000014, 0)
+BottomBar.Size = UDim2.new(0, 350, 0, 35)
+
+RigsButton.Name = "RigsButton"
+RigsButton.Parent = BottomBar
+RigsButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+RigsButton.BorderSizePixel = 0
+RigsButton.ClipsDescendants = true
+RigsButton.Position = UDim2.new(0.214285731, 0, 0.118094325, 0)
+RigsButton.Size = UDim2.new(0, 100, 0, 25)
+RigsButton.Font = Enum.Font.Gotham
+RigsButton.Text = "Rigs"
+RigsButton.TextColor3 = Color3.fromRGB(255, 163, 26)
+RigsButton.TextSize = 14.000
+
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = RigsButton
+
+HatsButton.Name = "HatsButton"
+HatsButton.Parent = BottomBar
+HatsButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+HatsButton.BorderSizePixel = 0
+HatsButton.ClipsDescendants = true
+HatsButton.Position = UDim2.new(0.5, 0, 0.118096113, 0)
+HatsButton.Size = UDim2.new(0, 100, 0, 25)
+HatsButton.Font = Enum.Font.Gotham
+HatsButton.Text = "Hats"
+HatsButton.TextColor3 = Color3.fromRGB(255, 163, 26)
+HatsButton.TextSize = 14.000
+
+UICorner_2.CornerRadius = UDim.new(0, 16)
+UICorner_2.Parent = HatsButton
+
+RigsFrame.Name = "RigsFrame"
+RigsFrame.Parent = BottomBar
+RigsFrame.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+RigsFrame.BorderSizePixel = 0
+RigsFrame.Position = UDim2.new(0.0260000005, 0, -0.100000001, 0)
+RigsFrame.Size = UDim2.new(0, 330, 0, 2)
+RigsFrame.ZIndex = 10
+
+GrButton.Name = "GrButton"
+GrButton.Parent = BottomBar
+GrButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+GrButton.BorderSizePixel = 0
+GrButton.ClipsDescendants = true
+GrButton.Position = UDim2.new(0.897142887, 0, 0.118094206, 0)
+GrButton.Size = UDim2.new(0, 25, 0, 25)
+GrButton.Font = Enum.Font.Gotham
+GrButton.Text = "GR"
+GrButton.TextColor3 = Color3.fromRGB(255, 163, 26)
+GrButton.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = GrButton
+
+ReButton.Name = "ReButton"
+ReButton.Parent = BottomBar
+ReButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ReButton.BorderSizePixel = 0
+ReButton.ClipsDescendants = true
+ReButton.Position = UDim2.new(0.785714328, 0, 0.118094206, 0)
+ReButton.Size = UDim2.new(0, 25, 0, 25)
+ReButton.Font = Enum.Font.Gotham
+ReButton.Text = "RE"
+ReButton.TextColor3 = Color3.fromRGB(255, 163, 26)
+ReButton.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = ReButton
+
+UICorner_5.Parent = MainFrame
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = MainFrame
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.898730159, 0, 0.0399999991, 0)
+CloseButton.Size = UDim2.new(0, 25, 0, 25)
+CloseButton.ZIndex = 343
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = ""
+CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.TextSize = 14.000
+
+Icon.Name = "Icon"
+Icon.Parent = CloseButton
+Icon.BackgroundTransparency = 1.000
+Icon.Size = UDim2.new(0, 25, 0, 25)
+Icon.ZIndex = 45
+Icon.Image = "rbxassetid://7072725342"
+
+UIAspectRatioConstraint.Parent = Icon
+
+HatsFrame.Name = "HatsFrame"
+HatsFrame.Parent = MainFrame
+HatsFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+HatsFrame.BorderSizePixel = 0
+HatsFrame.Position = UDim2.new(1, 0, 0, 0)
+HatsFrame.Size = UDim2.new(0, 350, 0, 219)
+HatsFrame.ZIndex = 5
+
+UICorner_6.Parent = HatsFrame
+
+TextLabel.Parent = HatsFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0714285746, 0, 0.0456620976, 0)
+TextLabel.Size = UDim2.new(0, 300, 0, 45)
+TextLabel.ZIndex = 5
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Hat Hub V3 Hat Givers"
+TextLabel.TextColor3 = Color3.fromRGB(255, 163, 26)
+TextLabel.TextSize = 14.000
+
+ScrollingFrame.Parent = HatsFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0289999992, 0, 0.31400001, 0)
+ScrollingFrame.Size = UDim2.new(0, 330, 0, 135)
+ScrollingFrame.ZIndex = 5
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 3, 0)
+ScrollingFrame.ScrollBarThickness = 6
+
+CreeperButton.Name = "CreeperButton"
+CreeperButton.Parent = ScrollingFrame
+CreeperButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+CreeperButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+CreeperButton.Size = UDim2.new(0, 300, 0, 25)
+CreeperButton.ZIndex = 9
+CreeperButton.Font = Enum.Font.Gotham
+CreeperButton.Text = "Creeper"
+CreeperButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+CreeperButton.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 6)
+UICorner_7.Parent = CreeperButton
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 15)
+
+HandButton.Name = "HandButton"
+HandButton.Parent = ScrollingFrame
+HandButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+HandButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+HandButton.Size = UDim2.new(0, 300, 0, 25)
+HandButton.ZIndex = 9
+HandButton.Font = Enum.Font.Gotham
+HandButton.Text = "Hand"
+HandButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+HandButton.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 6)
+UICorner_8.Parent = HandButton
+
+UIPadding.Parent = ScrollingFrame
+UIPadding.PaddingTop = UDim.new(0, 15)
+
+HaloGunnerButton.Name = "HaloGunnerButton"
+HaloGunnerButton.Parent = ScrollingFrame
+HaloGunnerButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+HaloGunnerButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+HaloGunnerButton.Size = UDim2.new(0, 300, 0, 25)
+HaloGunnerButton.ZIndex = 9
+HaloGunnerButton.Font = Enum.Font.Gotham
+HaloGunnerButton.Text = "Halo Gunner"
+HaloGunnerButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+HaloGunnerButton.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 6)
+UICorner_9.Parent = HaloGunnerButton
+
+SoldierButton.Name = "SoldierButton"
+SoldierButton.Parent = ScrollingFrame
+SoldierButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+SoldierButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+SoldierButton.Size = UDim2.new(0, 300, 0, 25)
+SoldierButton.ZIndex = 9
+SoldierButton.Font = Enum.Font.Gotham
+SoldierButton.Text = "Soldier"
+SoldierButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+SoldierButton.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0, 6)
+UICorner_10.Parent = SoldierButton
+
+IceFairyButton.Name = "IceFairyButton"
+IceFairyButton.Parent = ScrollingFrame
+IceFairyButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+IceFairyButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+IceFairyButton.Size = UDim2.new(0, 300, 0, 25)
+IceFairyButton.ZIndex = 9
+IceFairyButton.Font = Enum.Font.Gotham
+IceFairyButton.Text = "Ice Fairy"
+IceFairyButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+IceFairyButton.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0, 6)
+UICorner_11.Parent = IceFairyButton
+
+FireGremlinButton.Name = "FireGremlinButton"
+FireGremlinButton.Parent = ScrollingFrame
+FireGremlinButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+FireGremlinButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+FireGremlinButton.Size = UDim2.new(0, 300, 0, 25)
+FireGremlinButton.ZIndex = 9
+FireGremlinButton.Font = Enum.Font.Gotham
+FireGremlinButton.Text = "Fire Gremlin"
+FireGremlinButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+FireGremlinButton.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 6)
+UICorner_12.Parent = FireGremlinButton
+
+HammerButton.Name = "HammerButton"
+HammerButton.Parent = ScrollingFrame
+HammerButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+HammerButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+HammerButton.Size = UDim2.new(0, 300, 0, 25)
+HammerButton.ZIndex = 9
+HammerButton.Font = Enum.Font.Gotham
+HammerButton.Text = "Hammer"
+HammerButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+HammerButton.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 6)
+UICorner_13.Parent = HammerButton
+
+MinigunButton.Name = "MinigunButton"
+MinigunButton.Parent = ScrollingFrame
+MinigunButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+MinigunButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+MinigunButton.Size = UDim2.new(0, 300, 0, 25)
+MinigunButton.ZIndex = 9
+MinigunButton.Font = Enum.Font.Gotham
+MinigunButton.Text = "Minigun"
+MinigunButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+MinigunButton.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 6)
+UICorner_14.Parent = MinigunButton
+
+JevilButton.Name = "JevilButton"
+JevilButton.Parent = ScrollingFrame
+JevilButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+JevilButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+JevilButton.Size = UDim2.new(0, 300, 0, 25)
+JevilButton.ZIndex = 9
+JevilButton.Font = Enum.Font.Gotham
+JevilButton.Text = "Jevil"
+JevilButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+JevilButton.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 6)
+UICorner_15.Parent = JevilButton
+
+ZenButton.Name = "ZenButton"
+ZenButton.Parent = ScrollingFrame
+ZenButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+ZenButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+ZenButton.Size = UDim2.new(0, 300, 0, 25)
+ZenButton.ZIndex = 9
+ZenButton.Font = Enum.Font.Gotham
+ZenButton.Text = "Zen"
+ZenButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+ZenButton.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(0, 6)
+UICorner_16.Parent = ZenButton
+
+BirthButton.Name = "BirthButton"
+BirthButton.Parent = ScrollingFrame
+BirthButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+BirthButton.Position = UDim2.new(0.0393939391, 0, 0.0296803638, 0)
+BirthButton.Size = UDim2.new(0, 300, 0, 25)
+BirthButton.ZIndex = 9
+BirthButton.Font = Enum.Font.Gotham
+BirthButton.Text = "Birth"
+BirthButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+BirthButton.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 6)
+UICorner_17.Parent = BirthButton
+
+RigsFrame_2.Name = "RigsFrame"
+RigsFrame_2.Parent = MainFrame
+RigsFrame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+RigsFrame_2.BorderSizePixel = 0
+RigsFrame_2.Size = UDim2.new(0, 350, 0, 219)
+RigsFrame_2.ZIndex = 5
+
+UICorner_18.Parent = RigsFrame_2
+
+BigRigButton.Name = "BigRigButton"
+BigRigButton.Parent = RigsFrame_2
+BigRigButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+BigRigButton.ClipsDescendants = true
+BigRigButton.Position = UDim2.new(0.0714285746, 0, 0.748858452, 0)
+BigRigButton.Size = UDim2.new(0, 300, 0, 25)
+BigRigButton.ZIndex = 5
+BigRigButton.Font = Enum.Font.Gotham
+BigRigButton.Text = "Big Rig"
+BigRigButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+BigRigButton.TextSize = 14.000
+
+UICorner_19.CornerRadius = UDim.new(0, 6)
+UICorner_19.Parent = BigRigButton
+
+NormalRigButton.Name = "NormalRigButton"
+NormalRigButton.Parent = RigsFrame_2
+NormalRigButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+NormalRigButton.ClipsDescendants = true
+NormalRigButton.Position = UDim2.new(0.0714285746, 0, 0.566210032, 0)
+NormalRigButton.Size = UDim2.new(0, 300, 0, 25)
+NormalRigButton.ZIndex = 5
+NormalRigButton.Font = Enum.Font.Gotham
+NormalRigButton.Text = "Normal Rig"
+NormalRigButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+NormalRigButton.TextSize = 14.000
+
+UICorner_20.CornerRadius = UDim.new(0, 6)
+UICorner_20.Parent = NormalRigButton
+
+SmallRigButton.Name = "SmallRigButton"
+SmallRigButton.Parent = RigsFrame_2
+SmallRigButton.BackgroundColor3 = Color3.fromRGB(255, 163, 26)
+SmallRigButton.ClipsDescendants = true
+SmallRigButton.Position = UDim2.new(0.0710000023, 0, 0.381999999, 0)
+SmallRigButton.Size = UDim2.new(0, 300, 0, 25)
+SmallRigButton.ZIndex = 5
+SmallRigButton.Font = Enum.Font.Gotham
+SmallRigButton.Text = "Small Rig"
+SmallRigButton.TextColor3 = Color3.fromRGB(27, 27, 27)
+SmallRigButton.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(0, 6)
+UICorner_21.Parent = SmallRigButton
+
+TextLabel_2.Parent = RigsFrame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0714285746, 0, 0.0456620976, 0)
+TextLabel_2.Size = UDim2.new(0, 300, 0, 45)
+TextLabel_2.ZIndex = 5
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Hat Hub V3 Rig Givers"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 163, 26)
+TextLabel_2.TextSize = 14.000
+
+RippleCircle.Name = "RippleCircle"
+RippleCircle.Parent = MainFrame
+RippleCircle.AnchorPoint = Vector2.new(0.5, 0.5)
+RippleCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RippleCircle.BackgroundTransparency = 1.000
+RippleCircle.Position = UDim2.new(0.5, 0, 0.5, 0)
+RippleCircle.ZIndex = 10
+RippleCircle.Image = "rbxassetid://266543268"
+RippleCircle.ImageColor3 = Color3.fromRGB(0, 0, 0)
+RippleCircle.ImageTransparency = 0.500
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Holder
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+
+-- Notify Function:
+local function notify(title,msg)
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = title; Text = msg; Duration = 10})
+end
+
+if game.PlaceId ~= 5100950559 then
+	notify("Wrong Game","This Game is not Just Grass")
+	HatHubGivers:Destroy()
+	return
+end
+
+if game.PlaceId == 5100950559 then
+	notify("Hat Giver for HatHub","This Giver was made by ches#8887, HatHub is made by soda jerk#0001")
+end
+
+
+-- Dragify Function:
+local UIS = game:GetService("UserInputService")
+function dragify(Frame)
+	dragToggle = nil
+	local dragSpeed = 0.50
+	dragInput = nil
+	dragStart = nil
+	local dragPos = nil
+	function updateInput(input)
+		local Delta = input.Position - dragStart
+		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	end
+	Frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = Frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	Frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragToggle then
+			updateInput(input)
+		end
+	end)
+end
+
+dragify(Holder)
+
+
+function ripple(Frame)
+
+	local frame = Frame
+	local RippleColor        = Color3.fromRGB(0, 0, 0) -- RGB Color of the ripple effect, you can change it.
+	local RippleTransparency = 0.8 ---------------------------- Max is 1, Min is 0
+	local PixelSize          = 2000 --------------------------- The Max size of the ripple in pixels
+	local TimeLength         = 0.9 ---------------------------- How long the ripple animation is
+	local FadeLength         = 0.6 ---------------------------- How long it takes for the ripple to fade out
+
+
+	local rgb = Color3.fromRGB
+	local ud2 = UDim2.new
+	repeat
+		wait()
+	until game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+
+	frame.ClipsDescendants = true
+	frame.AutoButtonColor = false
+
+
+	function tweenInRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				TimeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+				{
+					Size = ud2(0, PixelSize, 0, PixelSize);
+				}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+		end)
+	end
+
+	function fadeOutRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				FadeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+				{
+					ImageTransparency = 1;
+				}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+			wait(FadeLength + 0.1)
+			ripple:Destroy()
+		end)
+	end
+
+	Frame.MouseButton1Down:Connect(function()
+		local done = false
+		local ripple = RippleCircle:Clone()
+		ripple.Parent = Frame
+		ripple.ZIndex = Frame.ZIndex + 1
+		ripple.ImageColor3 = RippleColor
+		ripple.ImageTransparency = RippleTransparency
+		tweenInRipple(ripple)
+		frame.MouseButton1Up:Connect(function()
+			if done == false then
+				done = true
+				fadeOutRipple(ripple)
+			end
+		end)
+		wait(4);
+		done = true;
+		fadeOutRipple(ripple) -- if it doesnt detect that it was unselected
+	end)
+end
+
+CloseButton.MouseButton1Down:Connect(function()
+	HatHubGivers:Destroy()
+end)
+
+local function chat(msg)
+	game:GetService("Players"):Chat(msg) 
+end  
+
+ReButton.MouseButton1Down:Connect(function()
+	ripple(ReButton)
+	chat("-re")
+end)
+
+GrButton.MouseButton1Down:Connect(function()
+	ripple(GrButton)
+	chat("-gr")
+end)
+
+HatsButton.MouseButton1Down:Connect(function()
+	ripple(HatsButton)
+	RigsFrame_2:TweenPosition(UDim2.new(-1,0,0,0),Enum.EasingDirection.Out, Enum.EasingStyle.Quad)
+	HatsFrame:TweenPosition(UDim2.new(0,0,0,0),Enum.EasingDirection.Out, Enum.EasingStyle.Quad)
+end)  
+
+RigsButton.MouseButton1Down:Connect(function()
+	ripple(RigsButton)
+	RigsFrame_2:TweenPosition(UDim2.new(0,0,0,0),Enum.EasingDirection.Out, Enum.EasingStyle.Quad)
+	HatsFrame:TweenPosition(UDim2.new(1,0,0,0),Enum.EasingDirection.Out, Enum.EasingStyle.Quad)
+end)  
+
+SmallRigButton.MouseButton1Down:Connect(function()
+	ripple(SmallRigButton)
+	chat("-gh 6114870953,6114849049,6114844034,6114875330,4659591491,4997844664")
+end)
+
+NormalRigButton.MouseButton1Down:Connect(function()
+	ripple(NormalRigButton)
+	chat("-gh 4740308836,3409612660,62234425,63690008,62724852,451220849")
+end)
+
+BigRigButton.MouseButton1Down:Connect(function()
+	ripple(BigRigButton)
+	chat("-gh 5064651922,4584787812,4584787037,4584788319,4878136110,1744033107")
+end)
+
+
+BirthButton.MouseButton1Down:Connect(function()
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+	ripple(BirthButton)
+	chat("-gh 4602286484,4710303488,4793985219,14815761,10911958")
+end)
+
+CreeperButton.MouseButton1Down:Connect(function()
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+	ripple(CreeperButton)
+	chat("-gh 20372960,5064651922,6114844034,4997844664,4997846903")
+end)
+print('ok')
+FireGremlinButton.Text = "(BROKEN) Fire Gremlin"
+FireGremlinButton.MouseButton1Down:Connect(function()
+	if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+	ripple(FireGremlinButton)
+	chat("-gh 4881917202,6937439191,6114870953,6114849049,6114844034")
+end)
+
+HaloGunnerButton.MouseButton1Down:Connect(function()
+	ripple(HaloGunnerButton)
+	chat("-gh 5134896593,5164319493")
+end)
+
+SoldierButton.MouseButton1Down:Connect(function()
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+    ripple(SoldierButton)
+    chat("-gh 6410489629,4584649983,5100070995,4504231783,5028569767")
+end)    
+HammerButton.MouseButton1Down:Connect(function()
+	ripple(HammerButton)
+	chat("-gh 4524454577")
+end)
+
+HandButton.MouseButton1Down:Connect(function()
+	ripple(HandButton)
+	chat("-gh ")
+end)
+IceFairyButton.MouseButton1Down:Connect(function()
+	ripple(IceFairyButton)
+	chat("-gh ")
+end)
+
+JevilButton.MouseButton1Down:Connect(function()
+if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+	ripple(JevilButton)
+	chat("-gh 5829882544")
+end)
+
+MinigunButton.Text = ("(BROKEN) Minigun")
+MinigunButton.MouseButton1Down:Connect(function()
+	ripple(MinigunButton)
+	if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+	chat("-gh 4584649983,5028569767,5154115297,4504231783")
+end)
+
+ZenButton.MouseButton1Down:Connect(function()
+	ripple(ZenButton)
+	chat("-gh 4753300133,3443038622,3499972183,4645400486")
+end)
+
+HandButton.Text = "(not in HH?) Hand"
+HandButton.MouseButton1Down:Connect(function()
+    ripple(HandButton)
+	chat("-gh 28171753,8337370,48474294,48474313,4855525473,451220849,62724852,20372960,63690008,62234425")
+end)    
+
+IceFairyButton.MouseButton1Down:Connect(function()
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora") then
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("InternationalFedora"):Destroy()
+    end
+     ripple(IceFairyButton)
+     chat("-gh 6133142040,4458601937,4506945409,4315489767,4794315940")
+end)
