@@ -1,0 +1,58 @@
+-- example     : Align(false,true,hat.Handle,character["Right Leg"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+-- would align a part with mesh, cframe heartbeat, to right leg, and no additional position stuff
+
+local loops = {}
+local function Align(Mesh,CFrameMethod,Part0,Part1,Position,Orientation)
+    
+	local Att0 = Instance.new("Attachment",Part0)
+	local Att1 = Instance.new("Attachment",Part1)
+
+	local APos = Instance.new("AlignPosition",Part0)
+	APos.MaxForce = math.huge
+	APos.MaxVelocity = math.huge
+	APos.Responsiveness = 200
+
+	local AOri = Instance.new("AlignOrientation",Part0)
+	AOri.MaxAngularVelocity = math.huge
+	AOri.MaxTorque = math.huge
+	AOri.Responsiveness = 200
+
+	APos.Attachment0 = Att0
+	APos.Attachment1 = Att1
+	AOri.Attachment0 = Att0
+	AOri.Attachment1 = Att1
+
+	-- Extra Settings
+
+	Part0.Massless = true
+
+	Part0.CustomPhysicalProperties = PhysicalProperties.new(0,0,0,0,0)
+
+	local vl = game:GetService("RunService").Heartbeat:Connect(function()
+		Part0.Velocity = Vector3.new(35,0,0)
+	end)
+
+    if Mesh then
+        for _,v in pairs(Part0:GetChildren()) do
+            if string.find(v.Name, "Mesh") then
+                v:Destroy() 
+            end    
+        end    
+    end    
+
+	if CFrameMethod then
+		local cfl = game:GetService("RunService").Heartbeat:Connect(function()
+			Part0.CFrame = Part1.CFrame
+		end)
+		table.insert(loops,cfl)
+	else
+		Att0.Position = Position or Vector3.new()
+		Att0.Orientation = Orientation or Vector3.new()
+	end
+
+    if Part0:FindFirstChild("AccessoryWeld") then
+        Part0:FindFirstChild("AccessoryWeld"):Destroy() 
+    end
+
+	table.insert(loops,vl)
+end
