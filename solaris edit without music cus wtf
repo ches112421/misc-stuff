@@ -253,12 +253,7 @@ function SolarisLib:New(Config)
     local oldScript = script
 
     local MenuBtnPreset = game:GetObjects("rbxassetid://7037141226")[1]
-    local MusicBtn = MenuBtnPreset:Clone()
-    MusicBtn.Parent = MFrame.TopBar.ButtonHolder.MenuBtn.MenuFrame
-    MusicBtn.Position = UDim2.new(0,0,0,5)
-    MusicBtn.Text = "Music"
-    MusicBtn.MouseEnter:Connect(function() TweenService:Create(MusicBtn,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{TextTransparency = 0}):Play() end)
-    MusicBtn.MouseLeave:Connect(function() TweenService:Create(MusicBtn,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{TextTransparency = 0.4}):Play() end)
+    
     local SettingsBtn = MenuBtnPreset:Clone()
     SettingsBtn.Parent = MFrame.TopBar.ButtonHolder.MenuBtn.MenuFrame
     SettingsBtn.Position = UDim2.new(0,0,0,25)
@@ -285,10 +280,7 @@ function SolarisLib:New(Config)
         end)
         MusicFrame.Frame.TopBar.CloseBtn.MouseEnter:Connect(function() TweenService:Create(MusicFrame.Frame.TopBar.CloseBtn.Ico,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency = 0}):Play() end)
         MusicFrame.Frame.TopBar.CloseBtn.MouseLeave:Connect(function() TweenService:Create(MusicFrame.Frame.TopBar.CloseBtn.Ico,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency = 0.4}):Play() end)
-        MusicBtn.MouseButton1Click:Connect(function()
-            MusicFrame.Visible = not MusicFrame.Visible
-            MFrame.TopBar.ButtonHolder.MenuBtn.MenuFrame.Visible = false 
-        end)
+
 
         local Sound = Instance.new("Sound")
         Sound.Name = "Sound"
